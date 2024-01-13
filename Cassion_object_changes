@@ -1,0 +1,21 @@
+class Circle:
+    # This is a Circle class to compute the area and perimeter.
+
+    def __init__(self, radius):
+        # The __init__ method initializes the circle with a given radius.
+        self.radius = radius
+
+    def area(self):
+        # This method calculates and prints the area of the circle.
+        circle_area = 3.14 * self.radius**2
+        print("Area of the circle:", circle_area)
+
+    def perimeter(self):
+        # This method calculates and prints the perimeter of the circle.
+        circle_perimeter = 2 * 3.14 * self.radius
+       
+print("Perimeter of the circle:", circle_perimeter)
+my_circle = Circle(5)
+
+my_circle.area()
+my_circle.perimeter()
